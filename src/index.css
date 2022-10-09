@@ -19,3 +19,24 @@ code {
 .bgText {
   z-index: 2;
 }
+@media (max-width: 800px) {
+  .navSize {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 0 10vw 0 0;
+    font-size: 1.8rem;
+    padding-top: 10vh;
+    background-color: #0f172a;
+  }
+  
+  .navSize li {
+    margin-top: 4vh;
+  }
+}

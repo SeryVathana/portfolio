@@ -1,8 +1,8 @@
 import React from "react";
-import { BsFillMoonStarsFill, BsFillSunFill, BsDot } from "react-icons/bs";
+import { BsDot } from "react-icons/bs";
+import { MdClose } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { CgMenuRightAlt } from "react-icons/cg";
-import { useState } from "react";
 
 export default function NAV(props) {
   return (
@@ -12,8 +12,52 @@ export default function NAV(props) {
       </Link>
 
       <ul className=" flex items-center">
-        <CgMenuRightAlt className="block md:hidden lg:hidden cursor-pointer ml-8 text-3xl" />
-        <div className="hidden md:flex lg:flex justify-between">
+        <CgMenuRightAlt
+          onClick={() => {
+            const NavItems = document.getElementById("navBar");
+            const closeNav = document.getElementById("closeNav");
+            const openNav = document.getElementById("openNav");
+            if (
+              NavItems.classList.contains("hidden") &&
+              closeNav.classList.contains("hidden")
+            ) {
+              NavItems.classList.remove("hidden");
+              NavItems.classList.add("block");
+              NavItems.classList.add("navSize");
+              openNav.classList.remove("block");
+              openNav.classList.add("hidden");
+              closeNav.classList.add("block");
+              closeNav.classList.remove("hidden");
+            }
+          }}
+          id="openNav"
+          className="block md:hidden lg:hidden cursor-pointer ml-8 text-3xl z-10"
+        />
+        <MdClose
+          onClick={() => {
+            const NavItems = document.getElementById("navBar");
+            const openNav = document.getElementById("openNav");
+            const closeNav = document.getElementById("closeNav");
+            if (
+              NavItems.classList.contains("block") &&
+              openNav.classList.contains("hidden")
+            ) {
+              NavItems.classList.remove("block");
+              NavItems.classList.add("hidden");
+              NavItems.classList.add("navSize");
+              openNav.classList.add("block");
+              openNav.classList.remove("hidden");
+              closeNav.classList.remove("block");
+              closeNav.classList.add("hidden");
+            }
+          }}
+          id="closeNav"
+          className="hidden md:hidden lg:hidden cursor-pointer ml-8 text-3xl z-10"
+        />
+        <div
+          id="navBar"
+          className="navBar hidden md:relative md:flex lg:flex justify-between"
+        >
           <li>
             <Link to="/" className="test ml-8">
               home
