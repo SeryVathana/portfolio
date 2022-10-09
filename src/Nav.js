@@ -6,8 +6,10 @@ import { useState } from "react";
 
 export default function NAV(props) {
   return (
-    <nav className="text-gray-800 py-5 mt-5 mb-10 flex justify-between sticky top-0 px-10 lg:px-20 z-10">
-      <h1 className="text-xl font-bold ">Séry Vathana</h1>
+    <nav className="text-gray-300 py-5 mt-5 mb-10 flex justify-between sticky top-0 px-10 md:px-10 lg:px-20 z-10">
+      <Link to="/" className="text-xl font-bold ">
+        Séry Vathana
+      </Link>
 
       <ul className=" flex items-center">
         <CgMenuRightAlt className="block md:hidden lg:hidden cursor-pointer ml-8 text-3xl" />

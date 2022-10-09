@@ -74,12 +74,12 @@ export const finisedProject = [
 ];
 
 export const about = [
-  ["Full Name", "Seryvathana Yoo"],
-  ["Age", "19"],
-  ["Birth Place", "Siem Reap, Cambodia"],
-  ["Major", "Information Technology Engineering"],
-  ["Phone Number", "(855)-165-342-41"],
-  ["Email", "yooseryvathana@gmail.com"],
+  ["Full Name", "Seryvathana Yoo", 96],
+  ["Age", "19", 96],
+  ["Birth Place", "Siem Reap, Cambodia", 96],
+  ["Major", "Information Technology Engineering", 96],
+  ["Phone Number", "(855)-165-342-41", 96],
+  ["Email", "yooseryvathana@gmail.com", 10],
 ];
 
 export const skill = [
