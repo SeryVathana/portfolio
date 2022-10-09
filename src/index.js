@@ -12,7 +12,7 @@ import Contact from "./Contact";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route index element={<App />}></Route>
         <Route path="blogs" element={<Blogs />}></Route>
