@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.7138458b.css",
+    "main.js": "/portfolio/static/js/main.2132ebfc.js",
+    "static/js/787.c5f86953.chunk.js": "/portfolio/static/js/787.c5f86953.chunk.js",
+    "static/media/about_flipped.png": "/portfolio/static/media/about_flipped.7eb195c23350f1a2c0d7.png",
+    "static/media/landing.png": "/portfolio/static/media/landing.7e1f0a207886e451a37d.png",
+    "index.html": "/portfolio/index.html",
+    "main.7138458b.css.map": "/portfolio/static/css/main.7138458b.css.map",
+    "main.2132ebfc.js.map": "/portfolio/static/js/main.2132ebfc.js.map",
+    "787.c5f86953.chunk.js.map": "/portfolio/static/js/787.c5f86953.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7138458b.css",
+    "static/js/main.2132ebfc.js"
+  ]
+}
