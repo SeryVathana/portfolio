@@ -58,31 +58,25 @@ export default function NAV(props) {
           id="navBar"
           className="navBar hidden md:relative md:flex lg:flex justify-between"
         >
-          <li>
-            <Link to="/" className="test ml-8">
-              home
-            </Link>
-          </li>
-          <BsDot className="ml-4 hidden lg:block mt-1"></BsDot>
-          <li>
+          <li className="hover:text-red-600">
             <Link to="/about" className="ml-4">
               about me
             </Link>
           </li>
           <BsDot className="ml-4 hidden lg:block mt-1"></BsDot>
-          <li>
+          <li className="hover:text-red-600">
             <Link to="/projects" className="ml-4">
               projects
             </Link>
           </li>
           <BsDot className="ml-4 hidden lg:block mt-1"></BsDot>
-          <li>
+          <li className="hover:text-red-600">
             <Link to="/blogs" className="ml-4">
               blogs
             </Link>
           </li>
           <BsDot className="ml-4 hidden lg:block mt-1"></BsDot>
-          <li>
+          <li className="hover:text-red-600">
             <Link to="/contact" className="ml-4">
               contact
             </Link>
